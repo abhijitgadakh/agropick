@@ -19,7 +19,7 @@ app.use("/", routes);
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow requests from this origin
+    origin: "*", // Allow requests from this origin
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow specific methods
     credentials: true, // Include credentials if needed
   })
