@@ -19,7 +19,7 @@ app.use("/", routes);
 
 app.use(
   cors({
-    origin: "*", // Allow requests from this origin
+    origin: "https://agropick-client.vercel.app", // Allow requests from this origin
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow specific methods
     credentials: true, // Include credentials if needed
   })
