@@ -12,7 +12,7 @@ const RegisterComponent = ({ toggleForm }) => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    Axios.post("http://localhost:3001/register", {
+    Axios.post("https://agropick-server.vercel.app/register", {
       email: email,
       name: name,
       password: password,
