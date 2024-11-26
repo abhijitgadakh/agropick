@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-import { Link } from "react-router-dom";
 import LoginComponent from "./LoginComponent";
 import RegisterComponent from "./RegisterComponent";
 
@@ -13,11 +11,13 @@ const Login = () => {
 
   return (
     <div className="login-page">
-      {isLogin ? (
-        <LoginComponent toggleForm={toggleForm} />
-      ) : (
-        <RegisterComponent toggleForm={toggleForm} />
-      )}
+      <div className="login-container">
+        {isLogin ? (
+          <LoginComponent toggleForm={toggleForm} />
+        ) : (
+          <RegisterComponent toggleForm={toggleForm} />
+        )}
+      </div>
     </div>
   );
 };

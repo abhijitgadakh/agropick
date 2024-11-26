@@ -6,37 +6,38 @@ const LoginComponent = ({ toggleForm }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Handle login logic here
     console.log("Logging in with", username, password);
   };
 
   return (
-    <div className="login-form">
+    <div className="form-container login-form">
       <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Email or Username</label>
+      <form onSubmit={handleLogin} className="form">
+        <div className="input-group">
           <input
+            placeholder="Email or Username"
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Password</label>
+        <div className="input-group">
           <input
+            placeholder="Password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="btn-submit">
+          Login
+        </button>
       </form>
       <p>
         Don't have an account?{" "}
-        <span onClick={toggleForm} style={{ color: "blue", cursor: "pointer" }}>
+        <span onClick={toggleForm} className="link">
           Register here
         </span>
       </p>

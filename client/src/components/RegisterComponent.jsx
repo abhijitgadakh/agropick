@@ -22,90 +22,82 @@ const RegisterComponent = ({ toggleForm }) => {
     }).then((res) => {
       console.log(res);
     });
-    console.log(
-      "Registering with:",
-      email,
-      name,
-      password,
-      passwordAgain,
-      contactNumber,
-      address,
-      pincode
-    );
   };
 
   return (
-    <div className="register-form">
-      <h2>Register</h2>
-      <form onSubmit={handleRegister}>
-        <div>
-          <label>Email</label>
+    <div className="form-container register-form">
+      <h2>Create an Account</h2>
+      <form onSubmit={handleRegister} className="form">
+        <div className="input-group">
           <input
+            placeholder="Email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Name</label>
+        <div className="input-group">
           <input
+            placeholder="Name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Password</label>
+        <div className="input-group">
           <input
+            placeholder="Password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Password again</label>
+        <div className="input-group">
           <input
-            type="passwordAgain"
+            placeholder="Confirm Password"
+            type="password"
             value={passwordAgain}
             onChange={(e) => setPasswordAgain(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Contact Number</label>
+        <div className="input-group">
           <input
+            placeholder="Contact Number"
             type="text"
             value={contactNumber}
             onChange={(e) => setContactNumber(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Address</label>
+        <div className="input-group">
           <input
+            placeholder="Address"
             type="text"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             required
           />
         </div>
-        <div>
-          <label>Pincode</label>
+        <div className="input-group">
           <input
+            placeholder="Pincode"
             type="text"
             value={pincode}
             onChange={(e) => setPincode(e.target.value)}
             required
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit" className="btn-submit">
+          Register
+        </button>
       </form>
       <p>
         Already have an account?{" "}
-        <span onClick={toggleForm} style={{ color: "blue", cursor: "pointer" }}>
+        <span onClick={toggleForm} className="link">
           Login here
         </span>
       </p>

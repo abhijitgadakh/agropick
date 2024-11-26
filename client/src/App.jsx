@@ -6,7 +6,6 @@ import "./App.css";
 
 const App = () => (
   <>
-    <Header />
     <Router>
       <Routes>
         {routes.map((route, index) => (

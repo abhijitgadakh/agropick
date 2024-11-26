@@ -9,7 +9,7 @@ import Cart from "./components/Cart";
 export const routes = [
   { path: "/", pageName: "Home", element: <Home /> },
   { path: "/login", pageName: "Login", element: <Login /> },
-  { path: "/register", pageName: "Register", element: <Register /> },
+  { path: "/register", pageName: "Register", element: <Login /> },
   { path: "/products", pageName: "Products", element: <Products /> },
   { path: "/cart", pageName: "Cart", element: <Cart /> },
 ];

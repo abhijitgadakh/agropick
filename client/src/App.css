@@ -18,3 +18,178 @@ white #f5f3f5 */
 .darkesr {
   background-color: #528b68;
 }
+
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login Page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-color: #4c9bff;
+  outline: none;
+}
+
+/* Button Styling */
+.btn-submit {
+  background-color: #4c9bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #357acc;
+}
+
+/* Link Styling */
+.link {
+  color: #4c9bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .btn-submit {
+    font-size: 14px;
+  }
+}
+/* Home Page Styling */
+.home-container {
+  text-align: center;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.route-list {
+  list-style: none;
+  padding: 0;
+}
+
+.route-item {
+  margin-bottom: 15px;
+}
+
+.route-link {
+  font-size: 18px;
+  color: #4c9bff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.route-link:hover {
+  background-color: #357acc;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .home-title {
+    font-size: 28px;
+  }
+
+  .route-link {
+    font-size: 16px;
+  }
+}
