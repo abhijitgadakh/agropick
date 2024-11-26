@@ -2,10 +2,14 @@ const mysql = require("mysql2/promise");
 
 async function getDBConnection() {
   return await mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "db_agro_pick",
+    // host: "localhost",
+    // user: "root",
+    // password: "",
+    // database: "db_agro_pick",
+    host: "btugnvgwbb2ibv4nfvb1-mysql.services.clever-cloud.com",
+    user: "uxjs33w6kzxqxfdc",
+    password: "QbZdMyPgMxC8yndE4o6T",
+    database: "btugnvgwbb2ibv4nfvb1",
   });
 }
 
@@ -45,6 +49,9 @@ async function addUser(user) {
     return { success: false, message: "Error adding user" };
   }
 }
+async function getUser(username) {}
+async function getUserById(id) {}
+async function getProducts() {}
 
 function getFormattedDate() {
   const date = new Date();

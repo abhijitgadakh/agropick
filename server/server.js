@@ -12,10 +12,10 @@ app.use(express.json());
 app.use("/", routes);
 
 // Start the server
-const PORT = 3001;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// const PORT = 3001;
+// app.listen(PORT, () => {
+//   console.log(`Server running on http://localhost:${PORT}`);
+// });
 
 app.use(
   cors({
