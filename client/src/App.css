@@ -1,0 +1,20 @@
+/* Emerald Green #89C967
+Pine Green #528B68
+Seafoam Green #9FE2BF
+Mint Green #A1DFD1
+Jade Green #689894
+black #000
+white #f5f3f5 */
+
+:root {
+  --color-dark: #000; /* Blue color */
+  --color-light: #f5f3f5; /* Blue color */
+  --color-leading: #528b68; /* Blue color */
+  --color-supporting-one: #9fe2bf; /* Blue color */
+  --color-supporting-two: #a1dfd1; /* Blue color */
+  --color-supporting-three: #689894; /* Blue color */
+}
+
+.darkesr {
+  background-color: #528b68;
+}

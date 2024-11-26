@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Register = () => {
+const TrackOrder = () => {
   return (
     <div>
-      <h1>Register Page</h1>
-      <p>Create a new account here.</p>
+      <h1>Orders</h1>
       <Link to="/">Home</Link>
     </div>
   );
 };
 
-export default Register;
+export default TrackOrder;

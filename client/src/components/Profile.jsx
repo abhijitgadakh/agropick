@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Register = () => {
+const Profile = () => {
   return (
     <div>
-      <h1>Register Page</h1>
-      <p>Create a new account here.</p>
+      <h1>Profile Page</h1>
+      <p>Your Profile</p>
       <Link to="/">Home</Link>
     </div>
   );
 };
 
-export default Register;
+export default Profile;
