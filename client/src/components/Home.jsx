@@ -5,19 +5,31 @@ import { routes } from "../Routes";
 const Home = () => {
   return (
     <div className="home-container">
-      <h1 className="home-title">Home Page</h1>
-      <p className="home-description">
-        Welcome to the home page! You can navigate to other pages from here.
-      </p>
-      <ul className="route-list">
-        {routes.map((route, index) => (
-          <li key={index} className="route-item">
-            <Link to={route.path} className="route-link">
+      {/* Navbar */}
+      <div className="navbar">
+        <div className="nav-left">
+          <img
+            src="/logo_square.png" // Replace with your image path
+            alt="Full Width Banner"
+            className="nav-logo"
+          />
+          <div className="nav-right"></div>
+          {routes.map((route, index) => (
+            <Link to={route.path} className="route-link" key={index}>
               {route.pageName}
             </Link>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
+
+      {/* Full-Screen Banner Section */}
+      <div className="banner">
+        <img
+          src="/banner.png" // Replace with your image path
+          alt="Full Width Banner"
+          className="banner-image"
+        />
+      </div>
     </div>
   );
 };

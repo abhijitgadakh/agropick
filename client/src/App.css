@@ -7,12 +7,12 @@ black #000
 white #f5f3f5 */
 
 :root {
-  --color-dark: #000; /* Blue color */
-  --color-light: #f5f3f5; /* Blue color */
-  --color-leading: #528b68; /* Blue color */
-  --color-supporting-one: #9fe2bf; /* Blue color */
-  --color-supporting-two: #a1dfd1; /* Blue color */
-  --color-supporting-three: #689894; /* Blue color */
+  --color-dark: #000; /* Dark color */
+  --color-light: #f5f3f5; /* Light color */
+  --color-leading: #528b68; /* Pine Green */
+  --color-supporting-one: #9fe2bf; /* Seafoam Green */
+  --color-supporting-two: #a1dfd1; /* Mint Green */
+  --color-supporting-three: #689894; /* Jade Green */
 }
 
 .darkesr {
@@ -114,7 +114,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Responsive Design for Login */
 @media (max-width: 768px) {
   .login-container {
     width: 90%;
@@ -133,11 +133,52 @@ h2 {
     font-size: 14px;
   }
 }
+.navbar {
+  background-color: #d2dbec;
+  padding: 0 50px;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px; /* Adjust as needed */
+}
+
+.nav-logo {
+  width: 80px; /* Adjust the width of your logo */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px; /* Space between route links */
+}
+
+.route-link {
+  color: #15285f; /* Customize color */
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.route-link:hover {
+  background-color: #15285f; /* Change on hover */
+  color: #fff;
+}
+
 /* Home Page Styling */
 .home-container {
+  margin: 0 auto;
   text-align: center;
-  padding: 40px;
-  max-width: 800px;
+  /* padding: 40px; */
+  max-width: 100%;
   margin: 0 auto;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -167,19 +208,14 @@ h2 {
 
 .route-link {
   font-size: 18px;
-  color: #4c9bff;
+  /* color: #4c9bff; */
   text-decoration: none;
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s;
 }
 
-.route-link:hover {
-  background-color: #357acc;
-  color: #fff;
-}
-
-/* Responsive Design */
+/* Responsive Design for Home Page */
 @media (max-width: 768px) {
   .home-container {
     padding: 20px;
@@ -279,94 +315,6 @@ h2 {
   font-size: 0.9rem;
   margin: 2px 0;
   color: #555;
-}
-
-/* /// */
-
-/* Style the container */
-.products-container {
-  padding: 20px;
-}
-
-.products-title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-/* Style individual product items */
-.product-item {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  background-color: #f9f9f9;
-}
-
-.product-info {
-  flex: 1;
-}
-
-.product-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Quantity selector styles */
-.quantity-selector {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.quantity-btn {
-  padding: 10px;
-  margin: 0 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.quantity-btn:disabled {
-  background-color: #ddd;
-  cursor: not-allowed;
-}
-
-.quantity-count {
-  font-size: 1.2rem;
-}
-
-/* Weight dropdown styles */
-.product-weight {
-  margin-top: 10px;
-}
-
-.weight-dropdown {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-/* Add to Cart button styles */
-.add-to-cart-btn {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.add-to-cart-btn:hover {
-  background-color: #218838;
 }
 
 /* Product Item - Align Image at the Top */
