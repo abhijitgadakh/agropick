@@ -12,14 +12,14 @@ app.use(express.json());
 app.use("/", routes);
 
 // Start the server
-// const PORT = 3001;
-// app.listen(PORT, () => {
-//   console.log(`Server running on http://localhost:${PORT}`);
-// });
+const PORT = 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
 
 app.use(
   cors({
-    origin: "https://agropick-client.vercel.app", // Allow requests from this origin
+    origin: "http://localhost:5173/", // Allow requests from this origin
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow specific methods
     credentials: true, // Include credentials if needed
   })
