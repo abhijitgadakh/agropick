@@ -31,3 +31,7 @@ Follow the steps below to set up and run the application locally:
 ```bash
 git clone https://github.com/abhijitgadakh/agropick.git
 ```
+
+### 2. Live Deployment
+
+https://agropick-client-72w9c3kn3-abhijit-gadakhs-projects.vercel.app/
